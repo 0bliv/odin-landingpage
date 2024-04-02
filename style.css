@@ -1,14 +1,135 @@
+/* Pre */
+@import url('meyer-reset.css');
 * {
 	box-sizing: border-box;
 }
 
-header, footer {
-	border: 8px solid blueviolet;
-	min-height: 125px;
+header, footer , main {
+
 }
 
 section {
-	border: 4px solid darkred;
-	min-height: 250px;
+
 }
 
+a {
+	color: inherit ;
+	display: block;
+
+}
+
+picture {
+	display: block;
+}
+
+img {
+	display:block;
+	width: 100%
+	height:auto;
+}
+
+
+/*Sturcture*/
+
+body {
+	display:flex;
+	flex-direction:column;
+	min-height: 100vh;
+}
+
+main {
+	flex-grow 1;
+}
+
+inner-section {
+	display:block;
+	padding: 20px
+	width: 90%;
+	max-width: 900px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 10vh;
+	padding-bottom: 10vh;
+
+}
+
+header inner-section {
+	padding: 10px
+}
+/* Typo*/
+
+.text-one {
+	font-size: 48px;
+	color: #F9FAF8;
+	font-weight: bolder;
+	font-family: sans-serif;
+}
+
+.text-two {
+	font-size: 18px;
+	color: #E5E7EB;
+	font-family: sans-serif;
+
+}
+
+/*Config*/
+
+html {
+	--dark: #1F2937;
+}
+
+
+/*Components*/
+
+.buttom {
+	display: inline-block;
+	background-color: #3882F6;
+	color: #E5E7EB;
+	font-size: 18px;
+	padding: 0.6em 1em;
+	border-radius: 6px;
+}
+
+/*Modules*/
+
+area-one {
+	display: block;
+	gap: 20px;
+	display: flex;
+	flex-direction: column;
+
+}
+
+area-one picture {
+
+	
+}
+
+
+area-one text-content {
+	display: block;
+
+}
+
+area-one text-content p {
+	margin-top: 10px;
+
+}
+
+area-one text-content .buttom {
+	margin-top: 10px;
+
+}
+
+@media (min-width:700px) {
+	area-one {
+		flex-direction: row;
+	}
+	area-one :is(text-content, picture) {
+		flex-basis: 50%;
+	}
+}
+
+.welcome {
+	background-color: #1F2937 ;
+}
