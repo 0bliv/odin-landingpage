@@ -90,6 +90,14 @@ header inner-section {
 	font-style:italic;
 }
 
+.text-six{
+
+	font-size: 24px;
+	color: #F9FAF8;
+	font-weight: bolder;
+	font-family: sans-serif;
+}
+
 /*Config*/
 
 html {
@@ -106,6 +114,19 @@ html {
 	font-size: 18px;
 	padding: 0.6em 1em;
 	border-radius: 6px;
+}
+
+.buttom2 {
+	display: inline-block;
+	background-color: #3882F6;
+	color: #E5E7EB;
+	font-size: 18px;
+	padding: 0.6em 1em;
+	border-radius: 6px;
+	border: solid white;
+	float: right;
+	margin-right: 140px;
+	margin-top: -50px;
 }
 
 product-content {
@@ -183,12 +204,36 @@ product-section div {
 
 quote-section {
 	display: block;
+	gap: 20px;
+	display: flex;
+	flex-direction: column;
 }
 
 quote text-content p {
 	margin-top: 10px;
 	text-align: center;
 }
+
+action-section {
+	display: block;
+	background-color: #3882F6;
+	padding-top: 40px;
+	padding-bottom: 40px;
+	border-radius: 6px;
+
+}
+action-section text-content p {	
+	margin-top: 10px;
+	text-align: left;
+	padding-left: 70px;
+}
+
+action-section text-content .buttom {
+  display: block;
+  margin-left: auto;
+  margin-right: 0;
+}
+
 
 
 
