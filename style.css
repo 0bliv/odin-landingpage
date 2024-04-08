@@ -4,9 +4,25 @@
 	box-sizing: border-box;
 }
 
-header, footer , main {
+header {
+	display: block;
+}
+
+header text-content p {
+	margin-top: 10px;
+	text-align: left;
+	padding-left: 70px;
 
 }
+footer {
+	display: block;
+}
+
+footer text-content p {
+	text-align: center;
+	
+}
+
 
 section {
 
@@ -71,6 +87,14 @@ header inner-section {
 	font-family: sans-serif;
 
 }
+.text-twoh {
+	font-size: 18px;
+	color: #E5E7EB;
+	font-family: sans-serif;
+	word-spacing: 50px;
+
+
+}
 
 .text-tree {
 	font-size: 36px;
@@ -106,6 +130,12 @@ html {
 
 
 /*Components*/
+
+.box {
+  float: left;
+  width: 50%;
+  padding: 10px;
+}
 
 .buttom {
 	display: inline-block;
